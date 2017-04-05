@@ -1,23 +1,42 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view></router-view>
-  </div>
+    <div class="wrapper">
+        <div class="header-wrap">
+            <main-header></main-header>
+        </div>
+        <div class="content-wrap">
+            <router-view></router-view>
+        </div>
+    </div>
 </template>
 
 <script>
+import mainHeader from './main_header'
 export default {
-  name: 'app'
+    components: {
+        mainHeader
+    }
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+    .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .header-wrap {
+        height: 0.76rem;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .content-wrap {
+        position: absolute;
+        top: 0.76rem;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 </style>

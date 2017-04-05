@@ -1,0 +1,59 @@
+/* 媒体兼容 */
+html {
+    font-size: 100px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+@media all and (min-width: 320px) {
+    html {
+        font-size: 42.66667px;
+    }
+}
+@media all and (min-width: 360px) {
+    html {
+        font-size: 48px;
+    }
+}
+@media all and (min-width: 375px) {
+    html {
+        font-size: 50px;
+    }
+}
+@media all and (min-width: 414px) {
+    html {
+        font-size: 55.2px;
+    }
+}
+@media all and (min-width: 480px) {
+    html {
+        font-size: 64px;
+    }
+}
+@media all and (min-width: 640px) {
+    html {
+        font-size: 85.33333px;
+    }
+}
+@media all and (min-width: 768px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+/* reset */
+html, body, div {
+    margin: 0;
+    padding: 0;
+}
+
+/* common */
+.clearfix:after {
+    display: table;
+    content: "";
+    clear: both;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
